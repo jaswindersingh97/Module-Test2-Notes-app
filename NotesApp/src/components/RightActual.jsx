@@ -14,7 +14,7 @@ function RightActual(param) {
       <div className={Style.footer}>
       <div className={Style.Textfield}>
         <textarea placeholder='Enter your Text here........'></textarea>
-        <button><img src={SendArrow}/></button>
+        <button onClick={()=>alert("hi")}><img src={SendArrow}/></button>
       </div>
       </div>
 
