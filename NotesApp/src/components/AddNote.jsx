@@ -3,7 +3,7 @@ import Style from './AddNote.module.css';
 
 function AddNote() {
     const colors = ["#B38BFA", "#FF79F2", "#43E6FC", "#F19576", "#0047FF", "#6691FF"];
-    // const [color, setColor] = useState("white");
+    const [color, setColor] = useState("white");
 
     return (
         <div className={Style.container}>
@@ -21,12 +21,14 @@ function AddNote() {
                     <div
                         style={{ backgroundColor: item, cursor: 'pointer' }}
                         key={index}
-                        // onClick={() => setColor(item)}
+                        onClick={() => {setColor(item)
+                        console.log(color)}}
                     >
                     </div>
                 ))}
             </span>
             </div>
+            <button>Create</button>
         </div>
     );
 }
