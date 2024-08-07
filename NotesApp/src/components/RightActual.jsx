@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import Style from './RightActual.module.css';
 import SendArrow from './../assets/SendArrow.svg';
+import Notes from './Notes';
 function RightActual(param) {
   return (
     <div className={Style.container}>
@@ -9,7 +10,7 @@ function RightActual(param) {
         <p>{param.param}</p>
       </div>
       <div className={Style.body}>
-        body
+        <Notes/>
       </div>
       <div className={Style.footer}>
       <div className={Style.Textfield}>
