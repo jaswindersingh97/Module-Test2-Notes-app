@@ -4,10 +4,16 @@ function App() {
   return (
     <div className="container">
       <div className='left'>
-        left
+        <div className='upper_left'>
+          <h1>Pocket Notes</h1>
+          <button>+ Create Notes group</button>
+        </div>
+        <div className='down_left'>
+          
+        </div>
       </div>
       <div className='right'>
-        right
+      right
       </div>
     </div>
   )
