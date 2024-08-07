@@ -31,12 +31,13 @@
     background: black;
     border-radius: 10px;
 }
-.row1 input{
+.row1 input {
     width: 70%;
     padding: 10px;
     border-radius: 50px;
     border: 2px solid #CCCCCC;
 }
+
 
 .colorPicker{
     width: 65%;
