@@ -1,0 +1,58 @@
+.container{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden ;
+    background-color: white;
+}
+.top{
+    padding: 20px 10px ;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.heading{
+    width: 100%;
+    align-items:start;
+}
+.top button{
+    border: 0px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: black;
+    color: white;
+    font-weight: 500;
+}
+.down{
+    /* background-color: yellow; */
+    flex: 1;
+    padding: 20px 0px ;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 20px;
+}
+.NotesGroup{
+    /* background-color: rgb(0, 136, 255); */
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+    font-weight: 500;
+    border-radius: 32px 0px 0px 32px;
+
+}
+
+.NotesGroup:active{
+    background-color: #F7ECDC;
+}
+.NotesIcon{
+    background-color: #0047FF;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: 0px;
+    }
