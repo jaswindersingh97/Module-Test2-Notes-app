@@ -4,3 +4,4 @@ Date time method validation
 Need to maintain the position of button and heading sticky
 Need to create state for enable disable of button SendArrow
 Need to reset the text when changing the screen from one to other
+Making sure that the enter is getting permitted while entering text ie the enter doesnt gets skill in message

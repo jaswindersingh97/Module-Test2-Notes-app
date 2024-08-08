@@ -9,7 +9,7 @@
     font-size: 18px;
     line-height: 28px;
     background: #E8E8E8;
-    /* overflow: hidden; */
+    overflow: hidden;
 } 
 .header{
     width: 100%;
@@ -36,6 +36,7 @@
     flex:1;
     width: 100%;
     background-color: #F7ECDC;
+    overflow: auto;
 }
 .footer{
     width: 100%;
@@ -54,9 +55,9 @@
     font-size: 28px;
 }
 .footer button{
-    position: relative;
-    bottom: 56px;
-    left: 570px;
+    position: fixed;
+    bottom: 17px;
+    right: 18px;
     border: 0px;
     background-color: white;
 }

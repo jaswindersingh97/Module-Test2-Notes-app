@@ -6,6 +6,7 @@ function Left({onButtonClk}) {
   let notes = JSON.parse(localStorage.getItem("notes")) || [];
   return (
     <div className={Styles.container}>
+
       <div className={Styles.top}>
           <h1>Pocket Notes</h1>
         </div>
@@ -20,8 +21,9 @@ function Left({onButtonClk}) {
             )
           })
           }
+          <button className={Styles.button} onClick={onButtonClk}>+</button>
+
         </div>
-            <button className={Styles.button} onClick={onButtonClk}>+</button>
     </div>
   )
 }

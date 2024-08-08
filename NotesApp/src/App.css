@@ -4,8 +4,8 @@
     height: 100vh;
     display: flex;
     background-color: #F7ECDC;
+    /* overflow: hidden; */
 }
-
 .right{
     flex:1;
 }
@@ -27,3 +27,35 @@
     height: 30%;
     text-align: center;
 }
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #c1c0c0;
+
+    border-radius:5.5px;
+  }
+  ::-webkit-scrollbar-track:hover {
+    background: #a8a7a7;
+
+    border-radius:5.5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #7c7c7c;
+    
+    border-radius:5.5px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #000000A1; 
+
+
+  }
