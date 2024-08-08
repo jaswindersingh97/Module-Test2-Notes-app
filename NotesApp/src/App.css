@@ -7,6 +7,9 @@
     background-color: #DAE5F5;
     /* overflow: hidden; */
 }
+.left{
+  width: 20%;
+}
 .right{
     flex:1;
 }
@@ -55,3 +58,9 @@
   ::-webkit-scrollbar-thumb:hover {
     background: #000000A1; 
   }
+
+
+  @media (max-width: 700px){
+    .left{width: 100%;}
+    .right{display: none;}
+  }  

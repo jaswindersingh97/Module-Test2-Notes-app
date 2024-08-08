@@ -15,7 +15,9 @@
     <BrowserRouter>
     
       <div className="container">
+        <div className='left'>
           <Left onButtonClk={toggle}/>
+        </div>
         <div className='right'>
           <Routes>
             <Route path='/' element={<Right/>} />

@@ -55,8 +55,8 @@
     font-size: 28px;
 }
 .footer button{
-    position: fixed;
-    bottom: 17px;
+    position: absolute;
+    top: 100px;
     right: 25px;
     border: 0px;
     background-color: white;

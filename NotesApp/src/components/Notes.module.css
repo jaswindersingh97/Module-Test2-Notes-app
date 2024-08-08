@@ -6,21 +6,32 @@
     overflow-y: auto;
 }
 .Note{
+    font-size: 18px;
     padding: 20px ;
     display: flex;
-    gap: 50px;
-    /* border: 1px,solid,black; */
+    flex-direction: column;
+    /* gap: 50px; */
     margin-block: 20px;
     background-color:#FFFFFF;
     box-shadow: 0px 4px 20px 0px #00000040;
     border-radius: 5px;
 }
-.datetime{
-    /* background-color: aqua; */
-    width:10%;
-    display: flex;
-    flex-direction: column;
-}
+
 .content{
     flex:1;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28.83px;
+    letter-spacing: 0.035em;
+    text-align: left;
+
+}
+.datetime{
+    font-size: 14px;
+    font-weight: 600;
+    gap: 10px;
+    /* background-color: aqua; */
+    width:100%;
+    display: flex;
+    justify-content: end;
 }
