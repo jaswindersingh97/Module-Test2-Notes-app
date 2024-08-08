@@ -1,9 +1,16 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Style from './RightActual.module.css';
 import SendArrow from './../assets/SendArrow.svg';
 import Notes from './Notes';
 import {useParams} from 'react-router-dom';
+import DateTime from '../utils/DateTime';
 function RightActual() {
+  const [content,setContent]=useState("")
+  const onButtonClk=()=>{
+    alert(content);
+    // alert(DateTime())
+    setContent("")
+  }
   let notes = JSON.parse(localStorage.getItem("notes")) || [];
   const {index}=useParams();
   const {color,groupName,initials}=notes[index];
@@ -18,8 +25,8 @@ function RightActual() {
       </div>
       <div className={Style.footer}>
       <div className={Style.Textfield}>
-        <textarea placeholder='Enter your Text here........'></textarea>
-        <button onClick={()=>alert("hi")}><img src={SendArrow}/></button>
+        <textarea value={content} onChange={(e)=>setContent(e.target.value)} placeholder='Enter your Text here........'></textarea>
+        <button onClick={onButtonClk}><img src={SendArrow}/></button>
       </div>
       </div>
 
