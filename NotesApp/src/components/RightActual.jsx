@@ -6,8 +6,8 @@ import { useParams } from 'react-router-dom';
 import DateTime from '../utils/DateTime';
 
 function RightActual() {
-  const { index } = useParams(); // Correctly destructure index from useParams
-  const { date, time } = DateTime(); // Assuming DateTime is a hook or function returning date and time
+  const { index } = useParams(); 
+  const { date, time } = DateTime();
 
   const [data, setData] = useState({ message: "", date: "", time: ""});
   const [dataArray, setDataArray] = useState([]);
@@ -29,7 +29,7 @@ function RightActual() {
     let updatedTemp = { ...temp, data: updatedDataArray };
 
     notes[index] = updatedTemp; 
-    localStorage.setItem("notes", JSON.stringify(notes)); // Save the updated notes to localStorage
+    localStorage.setItem("notes", JSON.stringify(notes));
   };
 
   const { color, groupName, initials } = notes[index] || {};
@@ -41,7 +41,7 @@ function RightActual() {
         <p>{groupName}</p>
       </div>
       <div className={Style.body}>
-        <Notes />
+        <Notes index={index}/>
       </div>
       <div className={Style.footer}>
         <div className={Style.Textfield}>

@@ -3,3 +3,4 @@ Need to highlight the ones are selected in Create group button page;
 Date time method validation
 Need to maintain the position of button and heading sticky
 Need to create state for enable disable of button SendArrow
+Need to reset the text when changing the screen from one to other
