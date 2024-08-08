@@ -49,10 +49,12 @@
 .NotesGroup:active{
     background-color: #F7ECDC;
 }
-.NotesIcon{
-    background-color: #0047FF;
-    color: white;
-    border-radius: 50%;
-    padding: 10px;
-    border: 0px;
+
+.NotesIcon {
+        place-content: center;
+        text-align: center;
+        height: 40px;
+        width: 40px;
+        color: white;
+        border-radius: 50%;
     }

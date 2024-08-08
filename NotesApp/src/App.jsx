@@ -17,7 +17,7 @@
         <div className='right'>
           <Routes>
             <Route path='/' element={<Right/>} />
-            <Route path='/GroupName' element={<RightActual/>}/>
+            <Route path='/GroupName/:index' element={<RightActual param="hi"/>}/>
           </Routes>
         </div>
       </div>

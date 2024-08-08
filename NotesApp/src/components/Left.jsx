@@ -19,7 +19,7 @@ function Left({onButtonClk}) {
           {
             notes.map((item,index)=>{
             return(
-              <div className={Styles.NotesGroup} key={index} onClick={()=>{navigate("/GroupName")}}>
+              <div className={Styles.NotesGroup} key={index} onClick={()=>{navigate(`/GroupName/${index}`)}}>
                 <span className={Styles.NotesIcon} style={{background:item.color}}>{item.initials}</span>
                 <div className={Styles.NotesName}>{item.groupName}</div>
               </div>

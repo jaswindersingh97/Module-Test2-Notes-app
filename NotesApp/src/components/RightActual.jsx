@@ -2,12 +2,16 @@ import React, { useEffect } from 'react';
 import Style from './RightActual.module.css';
 import SendArrow from './../assets/SendArrow.svg';
 import Notes from './Notes';
-function RightActual(param) {
+import {useParams} from 'react-router-dom';
+function RightActual() {
+  let notes = JSON.parse(localStorage.getItem("notes")) || [];
+  const {index}=useParams();
+  const {color,groupName,initials}=notes[index];
   return (
     <div className={Style.container}>
       <div className={Style.header}>
-        <span>MI</span>
-        <p>{param.param}</p>
+        <span style={{background:color}}>{initials}</span>
+        <p>{groupName}</p>
       </div>
       <div className={Style.body}>
         <Notes/>
