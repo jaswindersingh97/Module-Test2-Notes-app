@@ -1,7 +1,8 @@
-import React, { useEffect } from 'react'
+import React from 'react';
 import Styles from './Left.module.css';
 function Left() {
   let notes = JSON.parse(localStorage.getItem("notes")) || [];
+  // console.log(notes);
   return (
     <div className={Styles.container}>
       <div className={Styles.top}>
@@ -14,16 +15,16 @@ function Left() {
         </div>
         
         <div className={Styles.down}>
-          <div className={Styles.NotesGroup}>
-          {notes.map((item,index)=>{
-            console.log(index,item.color,item.initials,item.groupName)
-            {<span className={Styles.NotesIcon}>MI</span>}
-            
+          {
+            notes.map((item,index)=>{
+            return(
+              <div className={Styles.NotesGroup} key={index}>
+              <span className={Styles.NotesIcon} style={{background:item.color}}>{item.initials}</span>
+              <div className={Styles.NotesName}>{item.groupName}</div>
+            </div>
+            )
+          })
           }
-          )}
-          <span className={Styles.NotesIcon}>MI</span>
-          <div className={Styles.NotesName}>groupname</div>
-          </div>
           
         </div>
     </div>
