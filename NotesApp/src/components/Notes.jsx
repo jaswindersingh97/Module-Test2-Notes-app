@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Notes.module.css';
 
 function Notes(Notesgroup) {
-    console.log(Notesgroup);
+    // console.log(Notesgroup);
   return (
     <div className={styles.container}>
         <div className={styles.Note}>

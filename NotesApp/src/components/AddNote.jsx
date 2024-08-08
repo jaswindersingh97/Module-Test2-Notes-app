@@ -2,14 +2,16 @@ import React, { useState } from 'react';
 import Style from './AddNote.module.css';
 import Symbol from '../utils/Symbol'; // Ensure this path is correct
 
-function AddNote() {
+function AddNote({onButtonClk}) {
     const colors = ["#B38BFA", "#FF79F2", "#43E6FC", "#F19576", "#0047FF", "#6691FF"];
     const [note, setNote] = useState({ groupName: "", color: "", initials: "" });
 
     const handleclk = () => {
         if (note.groupName === "" || note.color === "") {
             alert("Enter all details");
-        } else {
+        } 
+        
+        else {
             
             const initials = Symbol(note.groupName);
             const updatedNote = { ...note, initials };
@@ -18,7 +20,9 @@ function AddNote() {
             let updatedNotes = [...notes, updatedNote];
             localStorage.setItem("notes", JSON.stringify(updatedNotes));
             setNote({ groupName: "", color: "", initials: "" });
-            console.log(localStorage.getItem("notes"));
+            // console.log(localStorage.getItem("notes"));
+
+            onButtonClk();  //closing the screen
         }
     };
 
