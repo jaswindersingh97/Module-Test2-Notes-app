@@ -9,7 +9,7 @@
     font-size: 18px;
     line-height: 28px;
     background: #E8E8E8;
-    overflow: hidden;
+    /* overflow: hidden; */
 } 
 .header{
     width: 100%;

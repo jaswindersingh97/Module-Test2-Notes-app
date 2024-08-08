@@ -5,6 +5,7 @@
   import RightActual from './components/RightActual';
   import AddNote from './components/AddNote';
   import {BrowserRouter,Routes,Route} from "react-router-dom";
+  import Error from './components/Error';
 
   function App() {
     const [blackScreen,setBlackScreen]=useState(false);
@@ -12,12 +13,14 @@
     
     return (
     <BrowserRouter>
+    
       <div className="container">
           <Left onButtonClk={toggle}/>
         <div className='right'>
           <Routes>
             <Route path='/' element={<Right/>} />
             <Route path='/GroupName/:index' element={<RightActual param="hi"/>}/>
+            <Route path='*' element={<Error/>}/>
           </Routes>
         </div>
       </div>
