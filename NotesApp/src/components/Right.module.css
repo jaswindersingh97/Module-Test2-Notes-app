@@ -21,8 +21,6 @@
 }
 .footer{
     flex: 1;
-    /* background-color: aqua; */
     position: absolute;
     bottom: 20px;
-    
 }

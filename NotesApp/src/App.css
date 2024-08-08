@@ -1,9 +1,10 @@
 
+
 .container{
     width: 100vw;
     height: 100vh;
     display: flex;
-    background-color: #F7ECDC;
+    background-color: #DAE5F5;
     /* overflow: hidden; */
 }
 .right{
@@ -37,25 +38,20 @@
   /* Track */
   ::-webkit-scrollbar-track {
     background: #c1c0c0;
-
     border-radius:5.5px;
   }
   ::-webkit-scrollbar-track:hover {
     background: #a8a7a7;
-
     border-radius:5.5px;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: #7c7c7c;
-    
     border-radius:5.5px;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #000000A1; 
-
-
   }

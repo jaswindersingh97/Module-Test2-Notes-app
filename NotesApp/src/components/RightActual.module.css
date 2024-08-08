@@ -8,7 +8,7 @@
     text-align: center;
     font-size: 18px;
     line-height: 28px;
-    background: #E8E8E8;
+    background: #001F8B;
     overflow: hidden;
 } 
 .header{
@@ -20,10 +20,10 @@
     font-weight: 500;
     box-sizing: border-box;
     align-items: center;
+    color: white;
 }
 .header span{
-    color: white;
-    background-color: blue;
+    /* background-color: blue; */
     height: 68.9px;
     width: 68.9px;
     border-radius: 50%;
@@ -35,7 +35,7 @@
 .body{
     flex:1;
     width: 100%;
-    background-color: #F7ECDC;
+    background-color: #DAE5F5;
     overflow: auto;
 }
 .footer{
@@ -57,7 +57,12 @@
 .footer button{
     position: fixed;
     bottom: 17px;
-    right: 18px;
+    right: 25px;
     border: 0px;
     background-color: white;
+    padding: 10px;
+}
+.footer button:hover{
+    background: rgb(213, 213, 247);
+    border-radius: 15%;
 }
