@@ -1,9 +1,19 @@
+const DateTime = (date = Date.now()) => {
+    const newDate = new Date(date);
+    const formattedTime = newDate.toLocaleTimeString("en-IN", {
+        hour: "numeric",
+        minute: "numeric",
+    });
+    const formattedDate = newDate.toLocaleDateString("en-IN", {
+        day: "numeric",
+        month: "long",
+        year: "numeric",
+    });
 
-function DateTime() {
-    const day = new Date();
-    const m = ["January", "February", "March", "April", "May", "June","July", "August", "September", "October", "November", "December"];
-    const date = day.getDate() + ' ' + m[day.getMonth()] + ' ' + day.getFullYear();
-    return(date);
-}
+    return {
+        time: formattedTime,
+        date: formattedDate
+    };
+};
 
-export default DateTime
+export default DateTime;
