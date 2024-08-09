@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Style from './RightActual.module.css';
-import SendArrow from './../assets/SendArrow.svg';
+// import SendArrow from './../assets/SendArrow.svg';
 import Notes from './Notes';
 import { useParams } from 'react-router-dom';
 import DateTime from '../utils/DateTime';
@@ -22,6 +22,7 @@ function RightActual({fun}) {
 
   const handleKeyDown = (event) => {
     if (event.key === 'Enter') {
+      event.preventDefault();
       onButtonClk();
     }
   };
