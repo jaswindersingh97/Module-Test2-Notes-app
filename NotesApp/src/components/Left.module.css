@@ -67,9 +67,6 @@
     font-weight: 500;
 }
 
-
-  
-
 @media (max-width: 750px){
     .button{
         left:586px
@@ -77,4 +74,8 @@
     .NotesGroup.selected {
         background-color: unset;
     }
+    /* .down{
+        align-content: center;
+        background-color: #16008B;
+    } */
   }

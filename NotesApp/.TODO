@@ -8,9 +8,9 @@ Need to create state for enable disable of button SendArrow----done----
 mobile view needed to be created----done----
 need to add action listener on enter----done----
 Need to make the group selected and unselected----done----
+should try to maintain the state of color if possible----done----
 
 floating nature of the add notes button is still needed to be checked
-should try to maintain the state of color if possible
 
 <!-- Need to reset the text when changing the screen from one to other -->
 <!-- Need to make the groupName date time wise -->
