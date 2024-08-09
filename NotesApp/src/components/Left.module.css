@@ -34,9 +34,13 @@
     background-color: #f0edfd;
     cursor: pointer;
 }
+.NotesGroup.selected {
+    background-color: rgba(140, 140, 140, 0.263); /* Highlight the selected note */
+  }
+  
 /* Needs to worked upon Active part*/
 .NotesGroup:active{
-    background-color: #2F2F2F2B;
+    background-color: #1919192b;
 }
 .NotesIcon {
         place-content: center;
@@ -62,6 +66,9 @@
     color: white;
     font-weight: 500;
 }
+
+
+  
 
 @media (max-width: 750px){
     .button{
