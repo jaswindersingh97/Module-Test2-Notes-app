@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import Styles from './Left.module.css';
 import { useNavigate } from 'react-router-dom';
 
-function Left({ onButtonClk, fun ,selectedIndex, setSelectedIndex}) {
-  // const [selectedIndex, setSelectedIndex] = useState(null);  
+function Left({ onButtonClk, fun}) {
+  const [selectedIndex, setSelectedIndex] = useState(null);  
   const navigate = useNavigate();
   let notes = JSON.parse(localStorage.getItem("notes")) || [];
 

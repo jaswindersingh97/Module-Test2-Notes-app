@@ -11,7 +11,7 @@
     const [blackScreen,setBlackScreen]=useState(false);
     const AddNoteGroup=()=>setBlackScreen(!blackScreen);
     const [showRight, setShowRight] = useState(false);
-    const [selectedIndex, setSelectedIndex] = useState(null);  
+    // const [selectedIndex, setSelectedIndex] = useState(null);  
     
     // useEffect(()=>{
     //   setSelectedIndex(null)
@@ -24,7 +24,7 @@
     <BrowserRouter>
       <div className={`container ${showRight ? 'show-right' : ''}`}>
         <div className='left'>
-          <Left onButtonClk={AddNoteGroup} fun={toggleView} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
+          <Left onButtonClk={AddNoteGroup} fun={toggleView}/>
         </div>
         <div className='right'>
           <Routes>
