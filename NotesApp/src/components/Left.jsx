@@ -1,12 +1,11 @@
 import React from 'react';
 import Styles from './Left.module.css';
 import { useNavigate } from 'react-router-dom';
-function Left({onButtonClk}) {
+function Left({onButtonClk,fun}) {
   const navigate=useNavigate();
   let notes = JSON.parse(localStorage.getItem("notes")) || [];
   return (
     <div className={Styles.container}>
-
       <div className={Styles.top}>
           <h1>Pocket Notes</h1>
         </div>

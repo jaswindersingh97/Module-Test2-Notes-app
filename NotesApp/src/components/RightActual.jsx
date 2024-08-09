@@ -5,7 +5,7 @@ import Notes from './Notes';
 import { useParams } from 'react-router-dom';
 import DateTime from '../utils/DateTime';
 
-function RightActual() {
+function RightActual({fun}) {
   const { index } = useParams(); 
   const { date, time } = DateTime();
 
@@ -36,6 +36,7 @@ function RightActual() {
 
   return (
     <div className={Style.container}>
+    {/* <button onClick={fun}>test</button> */}
       <div className={Style.header}>
         <span style={{ background: color }}>{initials}</span>
         <p>{groupName}</p>

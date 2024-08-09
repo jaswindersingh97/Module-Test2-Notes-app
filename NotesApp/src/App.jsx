@@ -9,27 +9,30 @@
 
   function App() {
     const [blackScreen,setBlackScreen]=useState(false);
-    const toggle=()=>blackScreen?setBlackScreen(false):setBlackScreen(true);
-    
+    const AddNoteGroup=()=>setBlackScreen(!blackScreen);
+    const [showRight, setShowRight] = useState(false);
+
+    const toggleView = () => {
+      setShowRight(!showRight);
+    };
     return (
     <BrowserRouter>
-    
-      <div className="container">
+      <div className={`container ${showRight ? 'show-right' : ''}`}>
         <div className='left'>
-          <Left onButtonClk={toggle}/>
+          <Left onButtonClk={AddNoteGroup} fun={toggleView}/>
         </div>
         <div className='right'>
           <Routes>
             <Route path='/' element={<Right/>} />
-            <Route path='/GroupName/:index' element={<RightActual param="hi"/>}/>
+            <Route path='/GroupName/:index' element={<RightActual fun={toggleView} />}/>
             <Route path='*' element={<Error/>}/>
           </Routes>
         </div>
       </div>
       {blackScreen && 
-        <div className='BlackScreen' onClick={toggle}> 
+        <div className='BlackScreen' onClick={AddNoteGroup}> 
           <div className='AddNote' onClick={(e) => e.stopPropagation()} >
-            <AddNote onButtonClk={toggle}/>
+            <AddNote onButtonClk={AddNoteGroup}/>
           </div>
         </div>
       }

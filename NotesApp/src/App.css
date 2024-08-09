@@ -61,6 +61,21 @@
 
 
   @media (max-width: 700px){
-    .left{width: 100%;}
-    .right{display: none;}
+    .container{flex-direction: column;}
+    .left, .right {
+      width: 100%;
+      height: 100%;
+  }
+  .left {
+    display: block;
+  }
+  .right{
+    display: none;
+  }
+  .show-right .left {
+    display: none;
+  }
+  .show-right .right {
+    display: block;
+  }
   }  
