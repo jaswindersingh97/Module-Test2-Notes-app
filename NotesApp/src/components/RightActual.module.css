@@ -59,7 +59,7 @@
     top: 100px;
     right: 25px;
     border: 0px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     padding: 10px;
 }
 .footer button:hover{
@@ -73,7 +73,7 @@
     border: unset;
     color: white;
 }
-@media (max-width: 700px){
+@media (max-width: 750px){
     .mobileButton{
         display: block;
     }

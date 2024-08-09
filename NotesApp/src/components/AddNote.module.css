@@ -51,8 +51,8 @@
     /* padding-right: 50px; */ 
 }
 .colorPicker div{
-    width: calc(2vw + 20px);  /* Circle size based on viewport width with a base size */
-    height: calc(2vw + 20px); 
+    width: calc(1.5vw + 20px);  /* Circle size based on viewport width with a base size */
+    height: calc(1.5vw + 20px); 
     border-radius: 50%;
     
 }
@@ -62,9 +62,34 @@ button:hover{
     cursor: pointer;
 }
 
-@media (max-width: 700px){
+@media (max-width: 750px){
     .container{
-        padding-inline:0px ;
+        padding-inline:10px ;
+    }
+    .colorPicker{
+        gap: 2px;
+        /* background-color: beige; */
+    }
+    .container button{
+        bottom: 10px;
+    }
+    .colorPicker div{
+        width: 30px;
+        height: 30px;
     }
 }
 
+/* @media (max-width: 320px){
+    .container{
+    }
+    .container button{
+        bottom: 10px;
+    }
+    .colorPicker{
+        gap: 0px;
+    }
+    .colorPicker div{
+        width: 30px;
+        height: 30px;
+    }
+} */

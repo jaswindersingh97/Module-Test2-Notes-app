@@ -81,5 +81,11 @@
 
   .AddNote{
     width: 90%;
+    height: 50%;
   }
   }  
+@media (max-width: 320px){
+  .AddNote{
+    height: 50%;
+  }
+}

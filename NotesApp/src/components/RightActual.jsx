@@ -54,6 +54,7 @@ function RightActual({fun}) {
             placeholder="Enter your Text here........"
           ></textarea>
           <button onClick={onButtonClk}>
+          {/* button */}
             <img src={SendArrow} alt="Send" />
           </button>
         </div>
