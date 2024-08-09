@@ -1,4 +1,4 @@
-  import React, { useState } from 'react';
+  import React, { useEffect, useState } from 'react';
   import './App.css'
   import Left from './components/Left';
   import Right from './components/Right';
@@ -11,6 +11,11 @@
     const [blackScreen,setBlackScreen]=useState(false);
     const AddNoteGroup=()=>setBlackScreen(!blackScreen);
     const [showRight, setShowRight] = useState(false);
+    const [selectedIndex, setSelectedIndex] = useState(null);  
+    
+    // useEffect(()=>{
+    //   setSelectedIndex(null)
+    // },[])
 
     const toggleView = () => {
       setShowRight(!showRight);
@@ -19,7 +24,7 @@
     <BrowserRouter>
       <div className={`container ${showRight ? 'show-right' : ''}`}>
         <div className='left'>
-          <Left onButtonClk={AddNoteGroup} fun={toggleView}/>
+          <Left onButtonClk={AddNoteGroup} fun={toggleView} selectedIndex={selectedIndex} setSelectedIndex={setSelectedIndex}/>
         </div>
         <div className='right'>
           <Routes>
