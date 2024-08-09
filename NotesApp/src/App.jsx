@@ -25,7 +25,7 @@
           <Routes>
             <Route path='/' element={<Right/>} />
             <Route path='/GroupName/:index' element={<RightActual fun={toggleView} />}/>
-            <Route path='*' element={<Error/>}/>
+            <Route path='*' element={<Right/>}/>
           </Routes>
         </div>
       </div>
