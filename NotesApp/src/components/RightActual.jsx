@@ -36,6 +36,8 @@ function RightActual({fun}) {
     let updatedTemp = { ...temp, data: updatedDataArray };
 
     notes[index] = updatedTemp; 
+    // const reorderedNotes = [notes[index], ...notes.slice(0, index), ...notes.slice(index + 1)]; 
+    // If we need to reorder them one of the issue is the page is still the same, and the index of the page is changed hence will fail 
     localStorage.setItem("notes", JSON.stringify(notes));
     }
   };

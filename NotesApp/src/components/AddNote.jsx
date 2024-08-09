@@ -17,7 +17,7 @@ function AddNote({onButtonClk}) {
             const updatedNote = { ...note, initials };
 
             let notes = JSON.parse(localStorage.getItem("notes")) || [];
-            let updatedNotes = [...notes, updatedNote];
+            let updatedNotes = [...notes,updatedNote ];  //This line eddited if needed refer this or remove
             localStorage.setItem("notes", JSON.stringify(updatedNotes));
             setNote({ groupName: "", color: "", initials: "" });
             // console.log(localStorage.getItem("notes"));
