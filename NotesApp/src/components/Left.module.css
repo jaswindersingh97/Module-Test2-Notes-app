@@ -74,4 +74,7 @@
     .button{
         left:586px
     }
+    .NotesGroup.selected {
+        background-color: unset;
+    }
   }
