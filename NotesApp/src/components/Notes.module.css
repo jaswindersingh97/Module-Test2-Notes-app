@@ -24,7 +24,7 @@
     line-height: 28.83px;
     letter-spacing: 0.035em;
     text-align: left;
-
+    overflow-wrap: break-word;
 }
 .datetime{
     font-size: 14px;
