@@ -1,13 +1,14 @@
 # ------- TODO list ----------------
 
-ValidString validation on the strings
+ValidString validation on the strings----done-----
 Need to highlight the ones are selected in Create group button page;---done---
 Date time method validation---done---
 Need to maintain the position of button and heading sticky---done---
-Need to create state for enable disable of button SendArrow
+Need to create state for enable disable of button SendArrow----done----
+mobile view needed to be created----done----
+need to add action listener on enter----done----
+
 Need to reset the text when changing the screen from one to other
-Making sure that the enter is getting permitted while entering text ie the enter doesnt gets skill in message
 Need to make the groupName date time wise
-mobile view needed to be created
 need to sort the list on bases of last updated
-need to add action listener on enter
+<!-- Making sure that the enter is getting permitted while entering text ie the enter doesnt gets skill in message -->

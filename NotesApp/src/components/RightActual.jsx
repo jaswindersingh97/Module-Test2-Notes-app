@@ -20,7 +20,13 @@ function RightActual({fun}) {
     }
   }, [index]);
 
+  const handleKeyDown = (event) => {
+    if (event.key === 'Enter') {
+      onButtonClk();
+    }
+  };
   const onButtonClk = () => {
+    if (data.message.trim()){
     const updatedDataArray = [...dataArray, data];
     setDataArray(updatedDataArray);
     setData({ message: "", date: "", time: ""});
@@ -30,6 +36,7 @@ function RightActual({fun}) {
 
     notes[index] = updatedTemp; 
     localStorage.setItem("notes", JSON.stringify(notes));
+    }
   };
 
   const { color, groupName, initials } = notes[index] || {};
@@ -51,6 +58,7 @@ function RightActual({fun}) {
             onChange={(e) => {
               setData({ ...data, message: e.target.value, date, time });
             }}
+            onKeyDown={handleKeyDown}
             placeholder="Enter your Text here........"
           ></textarea>
           <button onClick={onButtonClk}
