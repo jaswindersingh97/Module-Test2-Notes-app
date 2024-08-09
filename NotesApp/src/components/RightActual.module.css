@@ -54,17 +54,28 @@
     resize: none;
     font-size: 28px;
 }
-.footer button{
+.button_disabled{
     position: absolute;
     top: 100px;
     right: 25px;
     border: 0px;
-    background-color: rgb(255, 255, 255);
     padding: 10px;
+    background-color: unset;
+    width: 35px;
+    height: 29px;
+    background-image: url('./../assets/inactive.png');
 }
-.footer button:hover{
-    background: rgb(213, 213, 247);
-    border-radius: 15%;
+.button_enabled {
+    
+    position: absolute;
+    top: 100px;
+    right: 25px;
+    border: 0px;
+    padding: 10px;
+    background-color: unset;
+    width: 35px;
+    height: 29px;
+    background-image: url('./../assets/active.png');
 }
 .mobileButton{
     display: none;

@@ -53,9 +53,12 @@ function RightActual({fun}) {
             }}
             placeholder="Enter your Text here........"
           ></textarea>
-          <button onClick={onButtonClk}>
+          <button onClick={onButtonClk}
+                  disabled={!data.message.trim()} 
+        className={data.message.trim() ? Style.button_enabled : Style.button_disabled}
+>
           {/* button */}
-            <img src={SendArrow} alt="Send" />
+            {/* <img src={SendArrow} alt="Send" /> */}
           </button>
         </div>
       </div>

@@ -23,8 +23,8 @@ function Left({onButtonClk,fun}) {
             )
           })
           }
-          <button className={Styles.button} onClick={onButtonClk}>+</button>
 
+          <button className={Styles.button} onClick={onButtonClk}>+</button>
         </div>
     </div>
   )
