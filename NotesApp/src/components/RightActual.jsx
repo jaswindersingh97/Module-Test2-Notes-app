@@ -36,8 +36,8 @@ function RightActual({fun}) {
 
   return (
     <div className={Style.container}>
-    {/* <button onClick={fun}>test</button> */}
       <div className={Style.header}>
+        <button className={Style.mobileButton} onClick={fun}>&#129120;</button>
         <span style={{ background: color }}>{initials}</span>
         <p>{groupName}</p>
       </div>

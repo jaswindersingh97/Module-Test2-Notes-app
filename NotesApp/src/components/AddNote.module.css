@@ -3,6 +3,7 @@
     width: 100%;
     height: 100%;
     padding: 10px 30px;
+    border-radius: 10px;
 }
 .container h3{
     font-size: 29px;
@@ -15,7 +16,7 @@
     /* background-color: aquamarine; */
     align-items: center;
     justify-content: space-between;
-    padding: 10px;
+    padding-block: 10px;
 }
 .container label{
     font-weight: 500;
@@ -30,6 +31,7 @@
     color: white;
     background:#001F8B;
     border-radius: 10px;
+    border: 0px;
 }
 .row1 input {
     width: 70%;
@@ -37,6 +39,7 @@
     border-radius: 50px;
     border: 2px solid #CCCCCC;
 }
+/* .row1  */
 
 
 .colorPicker{
@@ -48,8 +51,8 @@
     /* padding-right: 50px; */ 
 }
 .colorPicker div{
-    height: 100%;
-    width: 100%;
+    width: calc(2vw + 20px);  /* Circle size based on viewport width with a base size */
+    height: calc(2vw + 20px); 
     border-radius: 50%;
     
 }
@@ -60,5 +63,8 @@ button:hover{
 }
 
 @media (max-width: 700px){
-
+    .container{
+        padding-inline:0px ;
+    }
 }
+

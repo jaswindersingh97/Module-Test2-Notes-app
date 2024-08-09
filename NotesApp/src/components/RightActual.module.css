@@ -66,3 +66,19 @@
     background: rgb(213, 213, 247);
     border-radius: 15%;
 }
+.mobileButton{
+    display: none;
+    font-size: xx-large;
+    background: unset;
+    border: unset;
+    color: white;
+}
+@media (max-width: 700px){
+    .mobileButton{
+        display: block;
+    }
+    .header{
+        padding: 1%;
+    }
+
+}
