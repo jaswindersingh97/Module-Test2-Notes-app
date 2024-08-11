@@ -10,11 +10,9 @@ need to add action listener on enter----done----
 Need to make the group selected and unselected----done----
 should try to maintain the state of color if possible----done----
 floating nature of the add notes button is still needed to be checked----done----
+Need to reset the text when changing the screen from one to other----done-----
 
-<!-- Need to reset the text when changing the screen from one to other -->
 <!-- Need to make the groupName date time wise -->
 <!-- need to sort the list on bases of last updated -->
-
-<!-- You also need to save meta data like date and time when the notes was saved and last updated. -->
-
 <!-- Making sure that the enter is getting permitted while entering text ie the enter doesnt gets skill in message -->
+<!-- You also need to save meta data like date and time when the notes was saved and last updated. -->
