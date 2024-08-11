@@ -2,13 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Style from './RightActual.module.css';
 // import SendArrow from './../assets/SendArrow.svg';
 import Notes from './Notes';
-import { useParams } from 'react-router-dom';
+import { useNavigate, useParams } from 'react-router-dom';
 import DateTime from '../utils/DateTime';
 
 function RightActual({fun}) {
   const { index } = useParams(); 
   const { date, time } = DateTime();
-
+  const navigate =useNavigate();
   const [data, setData] = useState({ message: "", date: "", time: ""});
   const [dataArray, setDataArray] = useState([]);
   
@@ -17,6 +17,9 @@ function RightActual({fun}) {
   useEffect(() => {
     if (notes[index]) {
       setDataArray(notes[index].data || []);
+    }
+    else{
+      navigate("/error")
     }
     setData({message: "", date: "", time: ""})
   }, [index]);

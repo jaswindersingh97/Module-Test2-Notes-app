@@ -30,7 +30,7 @@
           <Routes>
             <Route path='/' element={<Right/>} />
             <Route path='/GroupName/:index' element={<RightActual fun={toggleView} />}/>
-            <Route path='*' element={<Right/>}/>
+            <Route path='*' element={<Error/>}/>
           </Routes>
         </div>
       </div>
