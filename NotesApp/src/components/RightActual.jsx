@@ -18,6 +18,7 @@ function RightActual({fun}) {
     if (notes[index]) {
       setDataArray(notes[index].data || []);
     }
+    setData({message: "", date: "", time: ""})
   }, [index]);
 
   const handleKeyDown = (event) => {
